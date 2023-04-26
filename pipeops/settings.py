@@ -129,4 +129,4 @@ if DEBUG:
         BASE_DIR / "static",
     ]
 else:
-    STATIC_ROOT = 'static/'
+    STATIC_ROOT = BASE_DIR / "static",
