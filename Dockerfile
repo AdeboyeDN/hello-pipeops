@@ -18,6 +18,9 @@ COPY . .
 # Run database migrations
 RUN python manage.py migrate
 
+# Collect static files
+RUN python manage.py collectstatic --noinput
+
 # Expose port 8000 for the Django application
 EXPOSE 8000
 
